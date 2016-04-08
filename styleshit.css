@@ -1,0 +1,12 @@
+@font-face {
+    font-family: teletext;
+    src: url(MODE7GX3.TTF);
+}
+
+html {
+    font-family: teletext;
+}
+body {
+    color: red;
+    font-family: teletext;
+}
