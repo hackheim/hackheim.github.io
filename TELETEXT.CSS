@@ -104,6 +104,12 @@ p.smalltext {
   padding-bottom: 16px;
 }
 
+p.disclaimer {
+  font-style: italic;
+  font-size: 16px;
+  
+}
+
 h2 {
   font-family: Mode7, monospace, courier, fixed;
   font-size: 18px;
