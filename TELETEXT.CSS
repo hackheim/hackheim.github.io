@@ -66,8 +66,8 @@ a.red:active, .red a:active {
 
 /* flashing class, it's like the 'blink' tag is back */
 .flashing {
-    animation: flashing 1.3s steps(5, start) infinite;
-    -webkit-animation: flashing 1.3s steps(5, start) infinite;
+    animation: flashing 3s steps(5, start) infinite;
+    -webkit-animation: flashing 3s steps(5, start) infinite;
 }
 @keyframes flashing { to { visibility: hidden; } }
 @-webkit-keyframes flashing { to { visibility: hidden; } }
@@ -117,9 +117,10 @@ h2 {
   font-size: 18px;
   font-smooth: never;
   -webkit-font-smoothing : none;
-  color: yellow;
+  color: #ffff00;
   background: #000000;
   line-height: 28px;
+  border-bottom: solid 2px #00ff00;
 }
 
 h3 {
@@ -134,7 +135,7 @@ h3 {
 
 body, td.teletext {
     font-family: Mode7, monospace, courier, fixed;
-    font-size: 18px;
+    font-size: 26px;
     font-smooth: never;
     -webkit-font-smoothing : none;
     color: #ffffff;
@@ -168,7 +169,7 @@ body {
     text-align: left;
     white-space: pre;
     display: block;
-    font-size: 28px;
+    font-size: 26px;
     font-smooth: never;
     -webkit-font-smoothing : none;
 }
@@ -178,4 +179,9 @@ hr {
   color: #f0f0f0;
   border-style: dashed;
 
+}
+
+.doublesize {
+  line-height: 26px;
+  padding-top: 4px;
 }
