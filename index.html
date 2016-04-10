@@ -32,7 +32,7 @@ var monthname = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", 
 var updateClock = function() {
     var d = new Date();
     document.getElementById("TTdate").innerHTML = dayofweek[d.getDay()] + " " + d.getDate() + " " + monthname[d.getMonth()];
-    document.getElementById("TTtime").innerHTML = addleadingzero(d.getHours()) + ":" + addleadingzero(d.getMinutes()) + "/" + addleadingzero(d.getSeconds());
+    document.getElementById("TTtime").innerHTML = addleadingzero(d.getHours()) + ":" + addleadingzero(d.getMinutes()) + ":" + addleadingzero(d.getSeconds());
 }
 var counter=100;
 var updateCounter = function() {
