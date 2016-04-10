@@ -65,7 +65,7 @@ img{max-width:100%;height:auto;display:block;margin-left:auto;margin-right:auto}
 .w320{max-width:320px}
 .w640{max-width:640px}
 .w960{max-width:960px}
-.row{width:100%;margin-bottom:20px}
+.row{width:100%;margin-bottom:10px}
 .row .row{width:auto;margin:0 -20px}
 .c1{width:8.33%}
 .c2{width:16.66%}
