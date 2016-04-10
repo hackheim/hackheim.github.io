@@ -145,7 +145,7 @@ body, td.teletext {
 
 .headerlogo {
     font-family: Mode7, monospace, courier, fixed;
-    font-size: 50px;
+    font-size: 40px;
     font-smooth: never;
     -webkit-font-smoothing : none;
     color: #ffffff;
