@@ -9,4 +9,5 @@ html {
 body {
     color: red;
     font-family: teletext;
+    overflow: hidden;
 }
