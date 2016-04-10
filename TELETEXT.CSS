@@ -140,7 +140,7 @@ body, td.teletext {
     -webkit-font-smoothing : none;
     color: #ffffff;
     background: #000000;
-    line-height: 22px;
+    line-height: 10px;
 }
 
 .headerlogo {
