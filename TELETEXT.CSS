@@ -135,12 +135,12 @@ h3 {
 
 body, td.teletext {
     font-family: Mode7, monospace, courier, fixed;
-    font-size: 22px;
+    font-size: 28px;
     font-smooth: never;
     -webkit-font-smoothing : none;
     color: #ffffff;
     background: #000000;
-    line-height: 10px;
+    line-height: 18px;
 }
 
 .headerlogo {
