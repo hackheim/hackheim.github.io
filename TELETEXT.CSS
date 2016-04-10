@@ -135,25 +135,26 @@ h3 {
 
 body, td.teletext {
     font-family: Mode7, monospace, courier, fixed;
-    font-size: 18px;
+    font-size: 26px;
     font-smooth: never;
     -webkit-font-smoothing : none;
     color: #ffffff;
     background: #000000;
-    line-height: 18px;
+    line-height: 28px;
 }
 
 .headerlogo {
     font-family: Mode7, monospace, courier, fixed;
+    font-size: 50px;
     font-smooth: never;
     -webkit-font-smoothing : none;
     color: #ffffff;
     background: #000000;
-    line-height: 15px;
+    line-height: 16px;
     text-align: left;
     white-space: pre;
     display: block;
-    font-size: 15px;
+    font-size: 16px;
     font-smooth: never;
     -webkit-font-smoothing : none;
 
@@ -168,7 +169,7 @@ body {
     text-align: left;
     white-space: pre;
     display: block;
-    font-size: 22px;
+    font-size: 26px;
     font-smooth: never;
     -webkit-font-smoothing : none;
 }
@@ -181,6 +182,6 @@ hr {
 }
 
 .doublesize {
-  line-height: 22px;
+  line-height: 26px;
   padding-top: 4px;
 }
