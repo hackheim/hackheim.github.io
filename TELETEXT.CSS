@@ -162,7 +162,7 @@ body, td.teletext {
 
 body {
     border-width: 20px 20px 20px 20px; /* t r b l */
-    padding: 20px;
+    padding: 10px;
 }
 
 .teletext {
