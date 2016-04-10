@@ -161,7 +161,7 @@ body, td.teletext {
 }
 
 body {
-    border-width: 20px 20px 20px 20px; /* t r b l */
+    /*border-width: 20px 20px 20px 20px; /* t r b l */
     padding: 10px;
 }
 
@@ -183,5 +183,5 @@ hr {
 
 .doublesize {
   line-height: 20px;
-  padding-top: 4px;
+  padding-top: 0px;
 }
