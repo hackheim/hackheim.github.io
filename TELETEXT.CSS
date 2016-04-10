@@ -135,7 +135,7 @@ h3 {
 
 body, td.teletext {
     font-family: Mode7, monospace, courier, fixed;
-    font-size: 28px;
+    font-size: 18px;
     font-smooth: never;
     -webkit-font-smoothing : none;
     color: #ffffff;
