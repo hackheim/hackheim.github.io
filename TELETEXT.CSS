@@ -109,6 +109,12 @@ p.smalltext {
   line-height: 20px;
 }
 
+smalltext {
+  font-size: 18px;
+  padding-bottom: 18px;
+  line-height: 20px;
+}
+
 p.disclaimer {
   font-style: italic;
   font-size: 16px;
