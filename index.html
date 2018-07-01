@@ -15,9 +15,43 @@
 	<link rel="stylesheet" href="styleshit.css">
 	<link rel="stylesheet" href="TELETEXT.CSS">
 
+    <script type="text/javascript" src="paho-mqtt.js"></script>
+
 	<script type="text/javascript" language="JavaScript">
 <!--
+
+    function initNowPlaying() {
+        var client = new Paho.MQTT.Client("ws://mqtt.hackheim", 8083, "hackheim_infoscreen");
+        var elem = document.getElementById("nowplaying");
+
+        function onConnect() {
+            client.subscribe("mopidy/nowplaying");
+        }
+
+        function onMessageArrived(message) {
+            if (message.destinationName == "mopidy/nowplaying") {
+                elem.innerText = "Now playing: " + message.payloadString.split(":").join(" - ");
+            }
+            console.log("Message! " + message.payloadString);
+        }
+
+        client.onMessageArrived = onMessageArrived;
+        client.connect({
+            userName: "hackheim_infoscreen",
+            // Don't get excited, it can't actually do anything except read current tune
+            password: "XPY3CcGLy7eB9vKe", 
+            onSuccess: onConnect,
+            uris: [
+                "ws://mqtt.hackheim:8083/mqtt",
+            ],
+            mqttVersion: 4,
+            reconnect: true,
+            useSSL: false,
+        });
+    }
+
 var initTeletext = function() {
+    initNowPlaying();
     window.setInterval(updateClock, 1000);
     window.setTimeout(updateCounter, 100);
 }
@@ -47,7 +81,6 @@ var updateCounter = function() {
         window.setTimeout(updateCounter, 100);
     }
 }
-window.onload = initTeletext;
 //-->
 </script>
 
@@ -108,10 +141,16 @@ window.onload = initTeletext;
 				<div class="teletext c12 bluebg white" style="text-align: center;">Hackheim.com - 2018</div>
 				<div class="teletext c12 white flashing" style="text-align: center;">Thanks to our sponsors:</div>
 				<div class="teletext c12 white blackbg" style="text-align: center;"><span class="cyan">Nordic Semiconductor!</span> | <span class="yellow">Elfa Distrec</span> | <span class="red">(your company here?)</span> | <span class="blue">(your company here?)</span></div>
-				<div class="teletext c12 white flashing" style="text-align: center;">(teletext is the bloody future!)</div>
+				<div id="nowplaying" class="teletext c12 white flashing" style="text-align: center;">Now Playing: ?</div>
 				<div class="teletext c12 black smalltext" style="text-align: center">Wifi: HackheimWifi/TeletextFTW</div>
 			</footer>
 		</div>
 	</div>
+
+    <script type="text/javascript">
+    
+window.onload = initTeletext;
+    </script>
+
 </body>
 </html>
