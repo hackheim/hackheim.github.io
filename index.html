@@ -66,7 +66,7 @@ var monthname = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", 
 var updateClock = function() {
     var d = new Date();
     document.getElementById("TTdate").innerHTML = dayofweek[d.getDay()] + " " + d.getDate() + " " + monthname[d.getMonth()];
-    document.getElementById("TTtime").innerHTML = addleadingzero(d.getHours()) + ":" + addleadingzero(d.getMinutes()) + ":" + addleadingzero(d.getSeconds());
+    document.getElementById("TTtime").innerHTML = addleadingzero(d.getHours() + 1) + ":" + addleadingzero(d.getMinutes()) + ":" + addleadingzero(d.getSeconds());
 }
 var counter=100;
 var updateCounter = function() {
@@ -141,8 +141,8 @@ var updateCounter = function() {
 				
 				<h2>Open days</h2>
 				<br>
-				<p class="white">We're resuming scheduled open days after being covid-closed soon.</p><br>
-				<p class="white">Stay tuned, keep track on our social media or here on Teletext :)<br></p>
+				<p class="white">Wed 18:00 - Bedtime</p><br>
+				<p class="white">Sun 18:00 - Bedtime</p><br>
 				<br>
 				</div>
 			
